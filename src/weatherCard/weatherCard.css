@@ -1,0 +1,18 @@
+
+
+.card-root {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.weather-image{
+
+}
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
