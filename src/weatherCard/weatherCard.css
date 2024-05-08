@@ -1,13 +1,15 @@
 
 
 .card-root {
-    width: 400px;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     
 }
 .weather-image{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .weather-info{
@@ -16,3 +18,17 @@
     justify-content: center;
 
 }
+
+@media (width<=460px) {
+    .card-root {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .weather-info{
+       text-align: center;
+    
+    }
+   
+}
+

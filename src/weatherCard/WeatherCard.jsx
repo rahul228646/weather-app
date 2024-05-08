@@ -9,7 +9,9 @@ import {
 } from "../slice/WeatherSlice";
 import NotFound from "../notFound/NotFound";
 
+
 const WeatherCard = () => {
+ 
   const data = useSelector((state) => selectWeatherInfo(state));
   const loading = useSelector((state) => selectWeatherInfoLoading(state));
   const error = useSelector((state) => selectWeatherInfoError(state));
@@ -19,7 +21,7 @@ const WeatherCard = () => {
       {loading ? (
         <CircularProgress />
       ) : !data || error ? (
-        <NotFound error={error}/>
+        <NotFound error={error} />
       ) : (
         <div className="card-root">
           <div className="weather-image">
