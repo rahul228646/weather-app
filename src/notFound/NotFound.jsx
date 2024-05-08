@@ -26,7 +26,7 @@ const NotFound = ({ error }) => {
       />
       <Typography fontWeight={600}>
         {error?.status === 404
-          ? "No data found for the searched location, Try Changing the location"
+          ? "No data found for the searched city, Try Changing the city"
           : "Search a city to know its weather"}
       </Typography>
     </div>
